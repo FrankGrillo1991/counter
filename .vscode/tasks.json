@@ -1,0 +1,20 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+	{
+	  "type": "shell",
+	  "label": "Compile calculator.ts to calculator.js",
+	  "command": "npx tsc calculator.ts --target ES6 --outFile calculator.js",
+	  "group": "build",
+	  "problemMatcher": []
+	},
+	{
+	  "type": "shell",
+	  "label": "Open Counter App in Browser",
+	  "command": "start chrome calculator.html",
+	  "group": "test",
+	  "dependsOn": ["Compile calculator.ts to calculator.js"],
+	  "problemMatcher": []
+	}
+  ]
+}
