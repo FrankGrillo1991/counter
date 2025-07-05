@@ -1,0 +1,1 @@
+Counter developed with Typescript
